@@ -1,3 +1,5 @@
+package io.github.aagitoex.nepdate;
+
 import java.util.HashMap;
 
 class Constants {

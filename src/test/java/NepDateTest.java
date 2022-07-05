@@ -1,4 +1,5 @@
 
+import io.github.aagitoex.nepdate.NepDate;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -31,7 +32,7 @@ class NepDateTest {
 
     @Test
     void comparision() {
-        //list of NepDate with random values
+        //list of io.github.aagitoex.nepdate.NepDate with random values
         NepDate[] dates = new NepDate[100];
         for (int i = 0; i < dates.length; i++) {
             dates[i] = new NepDate(
