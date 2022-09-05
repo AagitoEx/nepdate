@@ -6,7 +6,7 @@ plugins {
 ext {
     // Provide your own coordinates here
     PUBLISH_GROUP_ID = 'io.github.aagitoex'
-    PUBLISH_VERSION = '0.0.1-alpha02'
+    PUBLISH_VERSION = '0.0.1-beta01'
     PUBLISH_ARTIFACT_ID = 'nepdate'
 }
 

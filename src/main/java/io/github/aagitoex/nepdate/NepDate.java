@@ -2,6 +2,7 @@ package io.github.aagitoex.nepdate;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.util.Locale;
 import java.util.Objects;
 
 public class NepDate implements Comparable<NepDate> {
@@ -134,6 +135,14 @@ public class NepDate implements Comparable<NepDate> {
         return month;
     }
 
+    public String getMonthName(Locale locale) {
+        if(Objects.equals(locale.getLanguage(), "ne")) {
+            return monthNameNp();
+        } else {
+            return monthName();
+        }
+    }
+
     public Integer getDay() {
         return day;
     }
@@ -163,5 +172,69 @@ public class NepDate implements Comparable<NepDate> {
     @Override
     public int compareTo(NepDate o) {
         return Long.compare(this.dateAsLong(), o.dateAsLong());
+    }
+
+
+    //return month name from int
+    private String monthName() {
+        switch (month) {
+            case 1:
+                return "Baisakh";
+            case 2:
+                return "Jestha";
+            case 3:
+                return "Ashar";
+            case 4:
+                return "Shrawan";
+            case 5:
+                return "Bhadra";
+            case 6:
+                return "Ashoj";
+            case 7:
+                return "Kartik";
+            case 8:
+                return "Mangsir";
+            case 9:
+                return "Poush";
+            case 10:
+                return "Magh";
+            case 11:
+                return "Falgun";
+            case 12:
+                return "Chaitra";
+            default:
+                return "Invalid month";
+        }
+    }
+
+    private String monthNameNp() {
+        switch (month) {
+            case 1:
+                return "बैशाख";
+            case 2:
+                return "जेठ";
+            case 3:
+                return "असार";
+            case 4:
+                return "साउन";
+            case 5:
+                return "भदौ";
+            case 6:
+                return "असोज";
+            case 7:
+                return "कार्तिक";
+            case 8:
+                return "मंसिर";
+            case 9:
+                return "पौष";
+            case 10:
+                return "माघ";
+            case 11:
+                return "फागुन";
+            case 12:
+                return "चैत";
+            default:
+                return "Invalid month";
+        }
     }
 }

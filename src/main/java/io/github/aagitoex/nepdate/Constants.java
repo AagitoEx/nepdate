@@ -19,38 +19,6 @@ class Constants {
     static final int adUBoundM = 4;
     static final int adUBoundD = 12;
 
-    //return month name from int
-    static String monthName(int year, int month) {
-        switch (month) {
-            case 1:
-                return "Baisakh";
-            case 2:
-                return "Jestha";
-            case 3:
-                return "Ashar";
-            case 4:
-                return "Shrawan";
-            case 5:
-                return "Bhadra";
-            case 6:
-                return "Ashoj";
-            case 7:
-                return "Kartik";
-            case 8:
-                return "Mangsir";
-            case 9:
-                return "Poush";
-            case 10:
-                return "Magh";
-            case 11:
-                return "Falgun";
-            case 12:
-                return "Chaitra";
-            default:
-                return "Invalid month";
-        }
-    }
-
     static HashMap<Integer, int[]> bsDaysInMonthByYear() {
         HashMap<Integer, int[]> bsDaysInMonthByYear = new HashMap<>();
         bsDaysInMonthByYear.put(bsLBoundY, new int[]{31, 31, 32, 32, 31, 30, 30, 29, 30, 29, 30, 30, 365});
