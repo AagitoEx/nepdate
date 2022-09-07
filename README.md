@@ -1,11 +1,11 @@
 # nepdate
-A Java 8 Nepali date converter library
+A Java 8 Nepali date converter library. Already used in production by [compose-nepcal](https://github.com/AagitoEx/compose-nepcal), a calender UI library.
 
 Available on maven central
 
 Using gradle
 ```gradle
-implementation 'io.github.aagitoex:nepdate:0.0.1-alpha02'
+implementation 'io.github.aagitoex:nepdate:0.0.1-beta01'
 ```
 
 OR 
